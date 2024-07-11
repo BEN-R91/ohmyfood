@@ -4,40 +4,27 @@
   font-style: normal;
 }
 
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
 .roboto-thin {
-  font-family: "Roboto", sans-serif;
   font-weight: 100;
-  font-style: normal;
 }
-
 .roboto-light {
-  font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-style: normal;
 }
-
 .roboto-regular {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-style: normal;
 }
-
 .roboto-medium {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-style: normal;
 }
-
 .roboto-bold {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-style: normal;
 }
-
 .roboto-black {
-  font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-style: normal;
 }
 
 body {
@@ -47,7 +34,7 @@ body {
   font-style: normal;
 }
 
-h2 {
+h1 {
   font-size: 24px;
   font-weight: 700;
 }
@@ -84,13 +71,35 @@ header .logo {
   -webkit-box-shadow: 0px 5px 15px rgb(56, 56, 56);
           box-shadow: 0px 5px 15px rgb(56, 56, 56);
 }
-
-.font-placeholder {
-  font-size: 16px;
-  font-weight: 500;
+.location-section form input.font-placeholder {
   padding-left: 15px;
   background-color: #EAEAEA;
   border: none;
+}
+.location-section form input.font-placeholder::-webkit-input-placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+.location-section form input.font-placeholder::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+.location-section form input.font-placeholder:-ms-input-placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+.location-section form input.font-placeholder::-ms-input-placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+.location-section form input.font-placeholder::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
 }
 
 .reservation-section {
@@ -98,12 +107,12 @@ header .logo {
   text-align: center;
   height: 300px;
 }
-.reservation-section .h2-reservation {
+.reservation-section .h1-reservation {
   margin-top: 0%;
   padding: 30px 50px 0px 50px;
 }
 .reservation-section .p-reservation {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   padding: 0px 30px 30px 30px;
 }
@@ -112,8 +121,8 @@ header .logo {
   padding: 15px 23px 15px 23px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
-  -webkit-box-shadow: 0px 5px 15px rgb(170, 170, 170);
-          box-shadow: 0px 5px 15px rgb(170, 170, 170);
+  -webkit-box-shadow: 0px 5px 10px rgb(204, 203, 203);
+          box-shadow: 0px 5px 10px rgb(204, 203, 203);
   color: white;
   text-decoration: none;
 }
@@ -121,8 +130,7 @@ header .logo {
 .functioning-section {
   padding: 30px 20px 60px 20px;
 }
-
-.a-functioning {
+.functioning-section .a-functioning {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,8 +141,7 @@ header .logo {
   padding-top: 15px;
   gap: 20px;
 }
-
-.a-style {
+.functioning-section .a-functioning .a-style {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,17 +155,18 @@ header .logo {
   -webkit-box-shadow: 0px 5px 10px rgb(204, 203, 203);
           box-shadow: 0px 5px 10px rgb(204, 203, 203);
   color: black;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding: 25px 0;
   text-decoration: none;
   gap: 20px;
 }
-
-.a-number {
+.functioning-section .a-functioning .a-style .a-number {
   background-color: #9356DC;
   color: white;
   border-radius: 90px;
-  padding: 2px 7px 2px 7px;
+  padding: 2px 7px;
+}
+.functioning-section .a-functioning .a-style i {
+  color: #7e7e7e;
 }
 
 .restaurants-section {
@@ -174,13 +182,13 @@ header .logo {
           justify-content: center;
   background-color: #F6F6F6;
   gap: 20px;
+  padding-bottom: 60px;
 }
-
-.h2-restaurants {
+.restaurants-section .h1-restaurants {
   padding: 20px 20px 0px 20px;
+  margin-bottom: 0px;
 }
-
-.restaurants-card {
+.restaurants-section .restaurants-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,31 +199,34 @@ header .logo {
   padding-left: 20px;
   padding-right: 20px;
 }
-
-.img-card {
+.restaurants-section .img-card {
   border-radius: 20px 20px 0px 0px;
   height: 150px;
 }
-
-.content-card {
+.restaurants-section .content-card {
   padding-left: 15px;
   background-color: white;
   border-radius: 0px 0px 20px 20px;
 }
-
-.h3-card {
+.restaurants-section .h3-card {
   margin-bottom: 0px;
 }
-
-.p-card {
+.restaurants-section .p-card {
   margin-top: 0px;
 }
 
 footer {
-  background-color: #353535;
+  background: #353535;
+  padding: 20px 0px 20px 20px;
 }
-
-.a-footer {
+footer .p-footer {
+  font-family: "Shrikhand", serif;
+  font-size: 16px;
+  color: white;
+  margin: 0px;
+  padding-bottom: 15px;
+}
+footer .a-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,4 +234,16 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 7px;
+}
+footer .a-footer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: white;
+  gap: 10px;
 }/*# sourceMappingURL=style.css.map */

@@ -6,52 +6,50 @@
   font-style: normal;
 }
 
-.roboto-thin {
+.roboto {
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
   font-style: normal;
+
+  &-thin {
+    font-weight: 100;
+  }
+
+  &-light {
+    font-weight: 300;
+  }
+
+  &-regular {
+    font-weight: 400;
+  }
+
+  &-medium {
+    font-weight: 500;
+  }
+
+  &-bold {
+    font-weight: 700;
+  }
+
+  &-black {
+    font-weight: 900;
+  }
 }
 
-.roboto-light {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
+// *****variables*****
 
-.roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.roboto-medium {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.roboto-bold {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.roboto-black {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
+$roboto-font: "Roboto", sans-serif;
+$shrikhand-font: "Shrikhand", serif;
 
 // *****general*****
 
 body {
   margin:0;
-  font-family: "Roboto", sans-serif;
+  font-family: $roboto-font;
   font-weight: 400;
   font-style: normal;
 }
 
-h2 {
+h1 {
   font-size: 24px;
   font-weight: 700;
 }
@@ -81,15 +79,21 @@ header {
   gap: 10px;
   background-color:#EAEAEA;
   box-shadow: 0px 5px 15px rgb(56, 56, 56);
-}
-  
-.font-placeholder {
-    font-size: 16px;
-    font-weight: 500;
-    padding-left: 15px;
-    background-color:#EAEAEA;
-    border: none;
+
+  form {
+    input.font-placeholder {
+      padding-left: 15px;
+      background-color: #EAEAEA;
+      border: none;
+
+      &::placeholder {
+        font-size: 16px;
+        font-weight: 500;
+        color: #000000; 
+      }
+    }
   }
+}
 
 // *****reservation*****
 
@@ -98,13 +102,13 @@ header {
   text-align: center;
   height:300px;
 
-  .h2-reservation {
+  .h1-reservation {
     margin-top: 0%;
     padding: 30px 50px 0px 50px;
   }
 
   .p-reservation {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     padding: 0px 30px 30px 30px;
     
@@ -114,7 +118,7 @@ header {
     border-radius: 25px;
     padding: 15px 23px 15px 23px;
     background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
-    box-shadow: 0px 5px 15px rgb(170, 170, 170);
+    box-shadow: 0px 5px 10px rgb(204, 203, 203);
     color: white;
     text-decoration: none;
   }
@@ -124,15 +128,16 @@ header {
 
 .functioning-section {
   padding: 30px 20px 60px 20px;
-}
-.a-functioning {
+
+  .a-functioning {
     display: flex;
     flex-direction: column;
     padding-top: 15px;
     gap: 20px;
-}
-.a-style {
+
+    .a-style {
       display: flex;
+      
       align-items: center;
       font-size: 16px;
       font-weight: 500;
@@ -140,17 +145,23 @@ header {
       background-color: #F6F6F6;
       box-shadow: 0px 5px 10px rgb(204, 203, 203);
       color: black;
-      padding-top: 25px;
-      padding-bottom: 25px;
+      padding: 25px 0;
       text-decoration: none;
       gap: 20px;
-}
 
-.a-number {
-      background-color: #9356DC;
-      color:white;
-      border-radius: 90px;
-      padding:2px 7px 2px 7px;
+      .a-number {
+        background-color: #9356DC;
+        color: white;
+        border-radius: 90px;
+        padding: 2px 7px;
+      }
+
+      i {
+        color: #7e7e7e;
+
+      }
+    }
+  }
 }
 
 // *****restaurants*****
@@ -160,50 +171,69 @@ header {
   flex-direction: column;
   justify-content: center;
   background-color: #F6F6F6;
-  gap: 20px
-}
+  gap: 20px;
+  padding-bottom: 60px;
 
-.h2-restaurants {
-  padding: 20px 20px 0px 20px;
-}
+  .h1-restaurants {
+    padding: 20px 20px 0px 20px;
+    margin-bottom: 0px;
+  }
 
-.restaurants-card {
+  .restaurants-card {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
-}
+  }
 
-.img-card {
-  border-radius: 20px 20px 0px 0px;
-  height: 150px;
-}
+    .img-card {
+      border-radius: 20px 20px 0px 0px;
+      height: 150px;
+    }
 
-.content-card {
- padding-left: 15px;
- background-color: white;
- border-radius: 0px 0px 20px 20px;
-}
+    .content-card {
+    padding-left: 15px;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+    }
+  
+      .h3-card {
+        margin-bottom: 0px;
+      }
 
-.h3-card {
-  margin-bottom: 0px;
-}
-
-.p-card {
-  margin-top: 0px;
-}
+      .p-card {
+        margin-top: 0px;
+      }
+    }      
 
 // *****footer*****
 
 footer {
-  background-color: #353535;
-}
+  background: #353535;
+  padding: 20px 0px 20px 20px;
+  
+  .p-footer {
+    font-family: $shrikhand-font;
+    font-size: 16px;
+    color:white;
+    margin: 0px;
+    padding-bottom: 15px;
+  }
 
-.a-footer {
-  display: flex;
-  flex-direction: column;
-}
+  .a-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
 
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      gap: 10px;
+    }
+  }
+}
 
 
 
