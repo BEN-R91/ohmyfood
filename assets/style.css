@@ -4,29 +4,6 @@
   font-style: normal;
 }
 
-.roboto {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-}
-.roboto-thin {
-  font-weight: 100;
-}
-.roboto-light {
-  font-weight: 300;
-}
-.roboto-regular {
-  font-weight: 400;
-}
-.roboto-medium {
-  font-weight: 500;
-}
-.roboto-bold {
-  font-weight: 700;
-}
-.roboto-black {
-  font-weight: 900;
-}
-
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -48,6 +25,10 @@ header {
           justify-content: center;
   padding-top: 30px;
   padding-bottom: 15px;
+  -webkit-box-shadow: 0px 2px 5px rgba(56, 56, 56, 0.3);
+          box-shadow: 0px 2px 5px rgba(56, 56, 56, 0.3);
+  position: relative;
+  z-index: 3;
 }
 header .logo {
   width: 200px;
@@ -68,8 +49,10 @@ header .logo {
   padding-left: 60px;
   gap: 10px;
   background-color: #EAEAEA;
-  -webkit-box-shadow: 0px 5px 15px rgb(56, 56, 56);
-          box-shadow: 0px 5px 15px rgb(56, 56, 56);
+  -webkit-box-shadow: 0px 3px 5px rgba(56, 56, 56, 0.3);
+          box-shadow: 0px 3px 5px rgba(56, 56, 56, 0.3);
+  position: relative;
+  z-index: 2;
 }
 .location-section form input.font-placeholder {
   padding-left: 15px;
@@ -164,6 +147,7 @@ header .logo {
   color: white;
   border-radius: 90px;
   padding: 2px 7px;
+  margin-left: -10px;
 }
 .functioning-section .a-functioning .a-style i {
   color: #7e7e7e;
@@ -202,6 +186,8 @@ header .logo {
 .restaurants-section .img-card {
   border-radius: 20px 20px 0px 0px;
   height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .restaurants-section .content-card {
   padding-left: 15px;
