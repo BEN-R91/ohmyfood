@@ -1,0 +1,25 @@
+.reservation-section {
+    background-color: $primary-background-color;
+    text-align: center;
+    height: 300px;
+  
+    .h1-reservation {
+      margin-top: 0%;
+      padding: 30px 50px 0px 50px;
+    }
+  
+    .p-reservation {
+      font-size: $basic-font-size;
+      font-weight: 300;
+      padding: 0px 30px 30px 30px;
+    }
+  
+    .a-reservation {
+      border-radius: 25px;
+      padding: 15px 23px 15px 23px;
+      @include linearGradient-button;
+      @include box-shadow;
+      color: $quaternary-color;
+      text-decoration: $no-text-decoration;
+    }
+  }

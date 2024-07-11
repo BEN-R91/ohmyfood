@@ -1,0 +1,36 @@
+.functioning-section {
+    padding: 30px 20px 60px 20px;
+  
+    .a-functioning {
+      display: flex;
+      flex-direction: column;
+      padding-top: 15px;
+      gap: 20px;
+  
+      .a-style {
+        display: flex;
+        align-items: center;
+        font-size: $basic-font-size;
+        font-weight: 500;
+        border-radius: 20px;
+        background-color: $primary-background-color;
+        @include box-shadow;
+        color: black;
+        padding: 25px 0;
+        text-decoration: $no-text-decoration;
+        gap: 20px;
+  
+        .a-number {
+          background-color: $primary-color;
+          color: $quaternary-color;
+          border-radius: 90px;
+          padding: 2px 7px;
+          margin-left: -10px;
+        }
+  
+        i {
+          color: #7e7e7e;
+        }
+      }
+    }
+  }

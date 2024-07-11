@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.shrikhand-regular {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  -webkit-box-shadow: 0px 2px 5px rgba(56, 56, 56, 0.3);
+          box-shadow: 0px 2px 5px rgba(56, 56, 56, 0.3);
+  position: relative;
+  z-index: 3;
+}
+header .logo {
+  width: 200px;
+}
+
+.location-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 60px;
+  gap: 10px;
+  background-color: #EAEAEA;
+  -webkit-box-shadow: 0px 3px 5px rgba(56, 56, 56, 0.3);
+          box-shadow: 0px 3px 5px rgba(56, 56, 56, 0.3);
+  position: relative;
+  z-index: 2;
+}
+.location-section form input.font-placeholder {
+  padding-left: 15px;
+  background-color: #EAEAEA;
+  border: none;
+}
+.location-section form input.font-placeholder::-webkit-input-placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+.location-section form input.font-placeholder::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+.location-section form input.font-placeholder:-ms-input-placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+.location-section form input.font-placeholder::-ms-input-placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+.location-section form input.font-placeholder::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.reservation-section {
+  background-color: #F6F6F6;
+  text-align: center;
+  height: 300px;
+}
+.reservation-section .h1-reservation {
+  margin-top: 0%;
+  padding: 30px 50px 0px 50px;
+}
+.reservation-section .p-reservation {
+  font-size: 16px;
+  font-weight: 300;
+  padding: 0px 30px 30px 30px;
+}
+.reservation-section .a-reservation {
+  border-radius: 25px;
+  padding: 15px 23px 15px 23px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-box-shadow: 0px 5px 10px rgb(204, 203, 203);
+          box-shadow: 0px 5px 10px rgb(204, 203, 203);
+  color: white;
+  text-decoration: none;
+}
+
+.functioning-section {
+  padding: 30px 20px 60px 20px;
+}
+.functioning-section .a-functioning {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 15px;
+  gap: 20px;
+}
+.functioning-section .a-functioning .a-style {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 20px;
+  background-color: #F6F6F6;
+  -webkit-box-shadow: 0px 5px 10px rgb(204, 203, 203);
+          box-shadow: 0px 5px 10px rgb(204, 203, 203);
+  color: black;
+  padding: 25px 0;
+  text-decoration: none;
+  gap: 20px;
+}
+.functioning-section .a-functioning .a-style .a-number {
+  background-color: #9356DC;
+  color: white;
+  border-radius: 90px;
+  padding: 2px 7px;
+  margin-left: -10px;
+}
+.functioning-section .a-functioning .a-style i {
+  color: #7e7e7e;
+}
+
+.restaurants-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #F6F6F6;
+  gap: 20px;
+  padding-bottom: 60px;
+}
+.restaurants-section .h1-restaurants {
+  padding: 20px 20px 0px 20px;
+  margin-bottom: 0px;
+}
+.restaurants-section .restaurants-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.restaurants-section .img-card {
+  border-radius: 20px 20px 0px 0px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.restaurants-section .content-card {
+  padding-left: 15px;
+  background-color: #ffffff;
+  border-radius: 0px 0px 20px 20px;
+}
+.restaurants-section .h3-card {
+  margin-bottom: 0px;
+}
+.restaurants-section .p-card {
+  margin-top: 0px;
+}
+
+footer {
+  background: #353535;
+  padding: 20px 0px 20px 20px;
+}
+footer .p-footer {
+  font-family: "Shrikhand", serif;
+  font-size: 16px;
+  color: white;
+  margin: 0px;
+  padding-bottom: 15px;
+}
+footer .a-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 7px;
+}
+footer .a-footer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: white;
+  gap: 10px;
+}/*# sourceMappingURL=main.css.map */

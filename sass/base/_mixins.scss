@@ -1,0 +1,12 @@
+@mixin box-shadow {
+    box-shadow: 0px 5px 10px rgb(204, 203, 203);
+  }
+  
+  @mixin linearGradient-button {
+    background-image: linear-gradient(#FF79DA, #9356DC);
+  }
+  
+  @mixin flex-center {
+    display: flex;
+    justify-content: center;
+  }
