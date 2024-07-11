@@ -120,7 +120,7 @@ header .logo {
   border-radius: 25px;
   padding: 15px 23px 15px 23px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  background-image: linear-gradient(#FF79DA, #9356DC);
   -webkit-box-shadow: 0px 5px 10px rgb(204, 203, 203);
           box-shadow: 0px 5px 10px rgb(204, 203, 203);
   color: white;
@@ -173,13 +173,13 @@ header .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background-color: #F6F6F6;
   gap: 20px;
   padding-bottom: 60px;
@@ -205,7 +205,7 @@ header .logo {
 }
 .restaurants-section .content-card {
   padding-left: 15px;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 0px 0px 20px 20px;
 }
 .restaurants-section .h3-card {
