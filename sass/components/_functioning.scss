@@ -1,13 +1,13 @@
 .functioning-section {
     padding: 30px 20px 60px 20px;
   
-    .a-functioning {
+    .functioning {
       display: flex;
       flex-direction: column;
       padding-top: 15px;
       gap: 20px;
   
-      .a-style {
+      .style {
         display: flex;
         align-items: center;
         font-size: $basic-font-size;
@@ -20,12 +20,16 @@
         text-decoration: $no-text-decoration;
         gap: 20px;
   
-        .a-number {
+        .number {
           background-color: $primary-color;
           color: $quaternary-color;
           border-radius: 90px;
           padding: 2px 7px;
           margin-left: -10px;
+        }
+
+        .i-mauve {
+          color: #9356dc
         }
   
         i {

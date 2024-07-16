@@ -21,5 +21,12 @@
       @include box-shadow;
       color: $quaternary-color;
       text-decoration: $no-text-decoration;
+      cursor: default;
+      transition: all 800ms;
+
+      &:hover {
+        @include hover-box-shadow;
+        @include hover-linearGradient-button;
+      }
     }
   }

@@ -10,12 +10,6 @@ h1 {
   font-weight: 700;
 }
 
-.shrikhand-regular {
-  font-family: "Shrikhand", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,12 +102,21 @@ header .logo {
           box-shadow: 0px 5px 10px rgb(204, 203, 203);
   color: white;
   text-decoration: none;
+  cursor: default;
+  -webkit-transition: all 800ms;
+  transition: all 800ms;
+}
+.reservation-section .a-reservation:hover {
+  -webkit-box-shadow: 0px 5px 10px rgba(102, 102, 102, 0.8);
+          box-shadow: 0px 5px 10px rgba(102, 102, 102, 0.8);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff88de), to(#9b63df));
+  background-image: linear-gradient(#ff88de, #9b63df);
 }
 
 .functioning-section {
   padding: 30px 20px 60px 20px;
 }
-.functioning-section .a-functioning {
+.functioning-section .functioning {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,7 +127,7 @@ header .logo {
   padding-top: 15px;
   gap: 20px;
 }
-.functioning-section .a-functioning .a-style {
+.functioning-section .functioning .style {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,14 +145,17 @@ header .logo {
   text-decoration: none;
   gap: 20px;
 }
-.functioning-section .a-functioning .a-style .a-number {
+.functioning-section .functioning .style .number {
   background-color: #9356DC;
   color: white;
   border-radius: 90px;
   padding: 2px 7px;
   margin-left: -10px;
 }
-.functioning-section .a-functioning .a-style i {
+.functioning-section .functioning .style .i-mauve {
+  color: #9356dc;
+}
+.functioning-section .functioning .style i {
   color: #7e7e7e;
 }
 
@@ -182,6 +188,8 @@ header .logo {
           flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
+  text-decoration: none;
+  color: black;
 }
 .restaurants-section .img-card {
   border-radius: 20px 20px 0px 0px;
@@ -194,10 +202,10 @@ header .logo {
   background-color: #ffffff;
   border-radius: 0px 0px 20px 20px;
 }
-.restaurants-section .h3-card {
+.restaurants-section .content-card .h3-card {
   margin-bottom: 0px;
 }
-.restaurants-section .p-card {
+.restaurants-section .content-card .p-card {
   margin-top: 0px;
 }
 

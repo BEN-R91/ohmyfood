@@ -15,6 +15,8 @@
       flex-direction: column;
       padding-left: 20px;
       padding-right: 20px;
+      text-decoration: $no-text-decoration;
+      color: black;
     }
   
     .img-card {
@@ -22,18 +24,18 @@
       height: 150px;
       object-fit: cover;
     }
-  
+
     .content-card {
       padding-left: 15px;
       background-color: $secondary-backgound-color;
       border-radius: 0px 0px 20px 20px;
-    }
+    
+      .h3-card {
+        margin-bottom: 0px;
+      }
   
-    .h3-card {
-      margin-bottom: 0px;
+      .p-card {
+        margin-top: 0px;
+      }
     }
-  
-    .p-card {
-      margin-top: 0px;
-    }
-  }
+}
