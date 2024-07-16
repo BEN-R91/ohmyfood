@@ -1,0 +1,78 @@
+header {
+    display: flex;
+    justify-content: center;
+
+    i {
+        color: black;
+        padding-left: 20px;
+    }
+}
+
+.img-restaurant {
+    width: 100%;
+    min-height: 275px;
+    max-height: 383px;
+    object-fit: cover;
+}
+
+// *****menu-section*****
+
+.menu-section {
+    background-color: $primary-background-color;
+    border-radius: 40px 40px 0px 0px;
+    margin-top: -80px;
+    padding-left: 17px;
+    padding-right: 17px;
+    position: relative;
+    z-index: 2;
+
+    .h3-arrangement {
+        padding-top: 30px;
+    }
+
+    .menu-card {
+        background-color: $secondary-backgound-color;
+        border-radius: 20px;
+        @include box-shadow;
+        padding-top: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 15px;
+
+        .p-wrong {
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0px;
+            padding-top: 10px;
+        }
+
+        .p-price-display {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 16px;
+            font-weight: 300;
+            margin-top: -10px;
+        }
+    }
+
+    .a-reservation {
+        border-radius: 25px;
+        padding: 15px 23px 15px 23px;
+        @include linearGradient-button;
+        @include box-shadow;
+        color: $quaternary-color;
+        text-decoration: $no-text-decoration;
+        cursor: default;
+        transition: all 800ms;
+  
+        &:hover {
+          @include hover-box-shadow;
+          @include hover-linearGradient-button;
+        }
+    }
+
+
+
+}
+
