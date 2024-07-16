@@ -10,6 +10,21 @@ h1 {
   font-weight: 700;
 }
 
+h2 {
+  font-family: shrikhand;
+  font-weight: 400;
+  font-size: 28px;
+  padding-top: 30px;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 16px;
+  border-bottom: 3px #99E2D0 solid;
+  width: 40px;
+  padding-bottom: 5px;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -240,4 +255,88 @@ footer .a-footer a {
   text-decoration: none;
   color: white;
   gap: 10px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header i {
+  color: black;
+  padding-left: 20px;
+}
+
+.img-restaurant {
+  width: 100%;
+  min-height: 275px;
+  max-height: 383px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu-section {
+  background-color: #F6F6F6;
+  border-radius: 40px 40px 0px 0px;
+  margin-top: -80px;
+  padding-left: 17px;
+  padding-right: 17px;
+  position: relative;
+  z-index: 2;
+}
+.menu-section .h3-arrangement {
+  padding-top: 30px;
+}
+.menu-section .menu-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 5px 10px rgb(204, 203, 203);
+          box-shadow: 0px 5px 10px rgb(204, 203, 203);
+  padding-top: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 15px;
+}
+.menu-section .menu-card .p-wrong {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0px;
+  padding-top: 10px;
+}
+.menu-section .menu-card .p-price-display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: -10px;
+}
+.menu-section .a-reservation {
+  border-radius: 25px;
+  padding: 15px 23px 15px 23px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-box-shadow: 0px 5px 10px rgb(204, 203, 203);
+          box-shadow: 0px 5px 10px rgb(204, 203, 203);
+  color: white;
+  text-decoration: none;
+  cursor: default;
+  -webkit-transition: all 800ms;
+  transition: all 800ms;
+}
+.menu-section .a-reservation:hover {
+  -webkit-box-shadow: 0px 5px 10px rgba(102, 102, 102, 0.8);
+          box-shadow: 0px 5px 10px rgba(102, 102, 102, 0.8);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff88de), to(#9b63df));
+  background-image: linear-gradient(#ff88de, #9b63df);
 }/*# sourceMappingURL=main.css.map */
