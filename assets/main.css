@@ -350,4 +350,87 @@ header i {
           box-shadow: 0px 5px 10px rgba(102, 102, 102, 0.8);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff88de), to(#9b63df));
   background-image: linear-gradient(#ff88de, #9b63df);
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: linear-gradient(45deg, #FF79DA, #9356DC);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+  -webkit-animation: fadeOut 3s forwards;
+          animation: fadeOut 3s forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.loader .loader-text {
+  font-family: Shrikhand;
+  font-size: 50px;
+  -webkit-animation: fadeInOutZoom 5s forwards;
+          animation: fadeInOutZoom 5s forwards;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes fadeInOutZoom {
+  0%, 20% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  20%, 80% {
+    opacity: 1;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  80%, 100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes fadeInOutZoom {
+  0%, 20% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  20%, 80% {
+    opacity: 1;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  80%, 100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }/*# sourceMappingURL=main.css.map */
