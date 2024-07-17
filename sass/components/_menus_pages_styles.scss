@@ -10,8 +10,7 @@ header {
 
 .img-restaurant {
     width: 100%;
-    min-height: 275px;
-    max-height: 383px;
+    max-height: 275px;
     object-fit: cover;
 }
 
@@ -20,14 +19,19 @@ header {
 .menu-section {
     background-color: $primary-background-color;
     border-radius: 40px 40px 0px 0px;
-    margin-top: -80px;
+    margin-top: -70px;
     padding-left: 17px;
     padding-right: 17px;
     position: relative;
     z-index: 2;
 
-    .h3-arrangement {
-        padding-top: 30px;
+    .h3-menu {
+        font-weight: 300;
+        font-size: 16px;
+        border-bottom: 3px $tertiary-color solid;
+        width: 40px;
+        padding-bottom: 5px;
+        padding-top: 25px;
     }
 
     .menu-card {
@@ -40,7 +44,7 @@ header {
         margin-bottom: 15px;
 
         .p-wrong {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 500;
             margin: 0px;
             padding-top: 10px;
@@ -50,15 +54,24 @@ header {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 300;
             margin-top: -10px;
         }
     }
+}  
 
-    .a-reservation {
+.display-btn {
+    @include flex-center;
+    margin-top: 40px;
+    padding-bottom: 40px;
+
+    .commander-btn {
+        font-size: 16px;
+        font-weight: 500;
         border-radius: 25px;
-        padding: 15px 23px 15px 23px;
+        border: none;
+        padding: 15px 45px 15px 45px;
         @include linearGradient-button;
         @include box-shadow;
         color: $quaternary-color;
@@ -67,12 +80,9 @@ header {
         transition: all 800ms;
   
         &:hover {
-          @include hover-box-shadow;
-          @include hover-linearGradient-button;
+            @include hover-box-shadow;
+            @include hover-linearGradient-button;
         }
-    }
-
-
-
+    }   
 }
 

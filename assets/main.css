@@ -13,16 +13,9 @@ h1 {
 h2 {
   font-family: shrikhand;
   font-weight: 400;
-  font-size: 28px;
+  font-size: 27px;
   padding-top: 30px;
-}
-
-h3 {
-  font-weight: 300;
-  font-size: 16px;
-  border-bottom: 3px #99E2D0 solid;
-  width: 40px;
-  padding-bottom: 5px;
+  margin-bottom: -12px;
 }
 
 header {
@@ -272,8 +265,7 @@ header i {
 
 .img-restaurant {
   width: 100%;
-  min-height: 275px;
-  max-height: 383px;
+  max-height: 275px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -281,14 +273,19 @@ header i {
 .menu-section {
   background-color: #F6F6F6;
   border-radius: 40px 40px 0px 0px;
-  margin-top: -80px;
+  margin-top: -70px;
   padding-left: 17px;
   padding-right: 17px;
   position: relative;
   z-index: 2;
 }
-.menu-section .h3-arrangement {
-  padding-top: 30px;
+.menu-section .h3-menu {
+  font-weight: 300;
+  font-size: 16px;
+  border-bottom: 3px #99E2D0 solid;
+  width: 40px;
+  padding-bottom: 5px;
+  padding-top: 25px;
 }
 .menu-section .menu-card {
   background-color: #ffffff;
@@ -301,7 +298,7 @@ header i {
   margin-bottom: 15px;
 }
 .menu-section .menu-card .p-wrong {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   margin: 0px;
   padding-top: 10px;
@@ -317,13 +314,27 @@ header i {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   margin-top: -10px;
 }
-.menu-section .a-reservation {
+
+.display-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+.display-btn .commander-btn {
+  font-size: 16px;
+  font-weight: 500;
   border-radius: 25px;
-  padding: 15px 23px 15px 23px;
+  border: none;
+  padding: 15px 45px 15px 45px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(#FF79DA, #9356DC);
   -webkit-box-shadow: 0px 5px 10px rgb(204, 203, 203);
@@ -334,7 +345,7 @@ header i {
   -webkit-transition: all 800ms;
   transition: all 800ms;
 }
-.menu-section .a-reservation:hover {
+.display-btn .commander-btn:hover {
   -webkit-box-shadow: 0px 5px 10px rgba(102, 102, 102, 0.8);
           box-shadow: 0px 5px 10px rgba(102, 102, 102, 0.8);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff88de), to(#9b63df));
