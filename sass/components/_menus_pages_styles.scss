@@ -1,11 +1,17 @@
 header {
-    display: flex;
-    justify-content: center;
+    @include flex-center;
 
-    i {
-        color: black;
-        padding-left: 20px;
+    .logo-menu {
+        width: 150px;
+        min-width: 150px;
     }
+}
+
+.i-header {
+    position: absolute;
+    color: black;
+    margin-top: -38px;
+    margin-left: 10px;
 }
 
 .img-restaurant {
@@ -57,9 +63,16 @@ header {
             font-size: 14px;
             font-weight: 300;
             margin-top: -10px;
+            
+        }
+
+        .price {
+            margin-right: -70px;
         }
     }
-}  
+} 
+
+
 
 .display-btn {
     @include flex-center;
