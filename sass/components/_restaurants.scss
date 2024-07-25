@@ -4,7 +4,13 @@
     background-color: $primary-background-color;
     gap: 20px;
     padding-bottom: 60px;
-  
+
+    @media (min-width: 1024px){
+    padding-left: 180px;
+    padding-right: 180px;
+    
+    }
+
     .h1-restaurants {
       padding: 20px 20px 0px 20px;
       margin-bottom: 0px;
@@ -23,6 +29,19 @@
       border-radius: 20px 20px 0px 0px;
       height: 150px;
       object-fit: cover;
+    }
+
+    .img-new {
+      position:absolute;
+      margin-left: 240px;
+      width: 52px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #008766;
+      border: 1px solid $tertiary-color;
+      background-color: $tertiary-color;
+      padding: 5px 5px 5px 7px;
+      
     }
 
     .content-card {

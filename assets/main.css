@@ -13,7 +13,7 @@ h1 {
 h2 {
   font-family: shrikhand;
   font-weight: 400;
-  font-size: 27px;
+  font-size: 25px;
   padding-top: 30px;
   margin-bottom: -12px;
 }
@@ -33,7 +33,13 @@ header {
   z-index: 3;
 }
 header .logo {
-  width: 200px;
+  width: 150px;
+}
+@media (min-width: 1024px) {
+  header {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
 
 .location-section {
@@ -55,6 +61,12 @@ header .logo {
           box-shadow: 0px 3px 5px rgba(56, 56, 56, 0.3);
   position: relative;
   z-index: 2;
+}
+@media (min-width: 1024px) {
+  .location-section {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
 .location-section form input.font-placeholder {
   padding-left: 15px;
@@ -92,9 +104,19 @@ header .logo {
   text-align: center;
   height: 300px;
 }
+@media (min-width: 1024px) {
+  .reservation-section {
+    height: 220px;
+  }
+}
 .reservation-section .h1-reservation {
   margin-top: 0%;
   padding: 30px 50px 0px 50px;
+}
+@media (min-width: 1024px) {
+  .reservation-section .h1-reservation {
+    font-size: 30px;
+  }
 }
 .reservation-section .p-reservation {
   font-size: 16px;
@@ -124,6 +146,12 @@ header .logo {
 .functioning-section {
   padding: 30px 20px 60px 20px;
 }
+@media (min-width: 1024px) {
+  .functioning-section {
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+}
 .functioning-section .functioning {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -135,7 +163,17 @@ header .logo {
   padding-top: 15px;
   gap: 20px;
 }
+@media (min-width: 1024px) {
+  .functioning-section .functioning {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 30px;
+  }
+}
 .functioning-section .functioning .style {
+  width: 335px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,6 +220,12 @@ header .logo {
   gap: 20px;
   padding-bottom: 60px;
 }
+@media (min-width: 1024px) {
+  .restaurants-section {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+}
 .restaurants-section .h1-restaurants {
   padding: 20px 20px 0px 20px;
   margin-bottom: 0px;
@@ -204,6 +248,17 @@ header .logo {
   height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.restaurants-section .img-new {
+  position: absolute;
+  margin-left: 240px;
+  width: 52px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #008766;
+  border: 1px solid #99E2D0;
+  background-color: #99E2D0;
+  padding: 5px 5px 5px 7px;
 }
 .restaurants-section .content-card {
   padding-left: 15px;
@@ -257,10 +312,6 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-header .logo-menu {
-  width: 150px;
-  min-width: 150px;
 }
 
 .i-header {

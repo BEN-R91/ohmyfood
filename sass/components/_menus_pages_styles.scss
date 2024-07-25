@@ -1,11 +1,7 @@
 header {
     @include flex-center;
-
-    .logo-menu {
-        width: 150px;
-        min-width: 150px;
-    }
 }
+
 
 .i-header {
     position: absolute;

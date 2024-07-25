@@ -1,13 +1,24 @@
 .functioning-section {
     padding: 30px 20px 60px 20px;
+
+    @media (min-width: 1024px) {
+      margin-left: 180px;
+      margin-right: 180px;
+    }
   
     .functioning {
       display: flex;
       flex-direction: column;
       padding-top: 15px;
       gap: 20px;
-  
-      .style {
+
+      @media (min-width: 1024px) {
+        flex-direction: row;
+        gap: 30px;
+      }
+
+     .style {
+        width: 335px;
         display: flex;
         align-items: center;
         font-size: $basic-font-size;
