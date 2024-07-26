@@ -17,12 +17,18 @@
     }
   
     .restaurants-card {
+      position: relative;
+      width: 320px;
       display: flex;
       flex-direction: column;
       padding-left: 20px;
       padding-right: 20px;
       text-decoration: $no-text-decoration;
       color: black;
+
+      @media (min-width: 1024px) {
+        width: 490px;
+      }
     }
   
     .img-card {
@@ -33,7 +39,7 @@
 
     .img-new {
       position:absolute;
-      margin-left: 240px;
+      right: 30px;
       width: 52px;
       font-size: 12px;
       font-weight: 500;
@@ -57,4 +63,15 @@
         margin-top: 0px;
       }
     }
+}
+
+.media-active {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
