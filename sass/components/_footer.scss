@@ -1,6 +1,16 @@
 footer {
     background: #353535;
     padding: 20px 0px 20px 20px;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 1024px){
+      flex-direction: row-reverse;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 20px 80px 0px 0px;
+      height: 114px;
+    }
   
     .p-footer {
       font-family: $shrikhand-font;
@@ -8,12 +18,24 @@ footer {
       color: $quaternary-color;
       margin: 0px;
       padding-bottom: 15px;
+
+      @media (min-width: 1024px){
+        padding-bottom: 0px;
+        font-size: 20px;
+      }
     }
-  
+
     .a-footer {
       display: flex;
       flex-direction: column;
       gap: 7px;
+
+      @media (min-width: 1024px){
+        flex-direction: row;
+        padding-right: 80px;
+        gap:20px;
+        
+      }
   
       a {
         display: flex;
@@ -22,5 +44,11 @@ footer {
         color: $quaternary-color;
         gap: 10px;
       }
+    }
+  }
+
+  .padding-active {
+    @media (min-width: 1024px){
+      padding-left: 50px;
     }
   }

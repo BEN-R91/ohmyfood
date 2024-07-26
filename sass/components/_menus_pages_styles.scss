@@ -2,7 +2,6 @@ header {
     @include flex-center;
 }
 
-
 .i-header {
     position: absolute;
     color: black;
@@ -45,6 +44,14 @@ header {
         padding-right: 15px;
         margin-bottom: 15px;
 
+        &:hover .check-anim {
+            width: 50px; 
+      
+            .check {
+                opacity: 1; 
+            }
+        }
+
         .p-wrong {
             font-size: 16px;
             font-weight: 500;
@@ -55,19 +62,44 @@ header {
         .p-price-display {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: flex-end;
             font-size: 14px;
             font-weight: 300;
             margin-top: -10px;
-            
-        }
-
-        .price {
-            margin-right: -70px;
         }
     }
-} 
 
+    .absolute {
+       position: absolute;
+       left: 15px;
+    }
+
+    .price {
+        padding-right: 15px;
+    }
+
+    .check-anim {
+        @include flex-center;
+        width: 0px;
+        margin-top: -20px;
+        margin-right: -15px;
+        padding-top: 25px;
+        background-color: $tertiary-color;
+        border-radius: 0px 20px 20px 0px;
+        transition: width 0.3s ease-in-out; 
+      
+        .check {
+            border: 1px solid $tertiary-color;
+            padding: 7px 2px 7px 2px;
+            border-radius: 50%;
+            color: $tertiary-color;
+            background-color: $secondary-backgound-color;
+            margin-bottom: 22px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out; 
+        }
+    }
+}
 
 
 .display-btn {
