@@ -2,11 +2,12 @@ header {
     @include flex-center;
 }
 
-.i-header {
+.i-a {
     position: absolute;
     color: black;
     margin-top: -38px;
     margin-left: 10px;
+    z-index: 10;
 }
 
 .img-restaurant {
@@ -25,6 +26,20 @@ header {
     padding-right: 17px;
     position: relative;
     z-index: 2;
+
+    @media (min-width: 1024px) {
+        margin-left: 192px;
+        margin-right: 192px;
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+
+    .h2-active {
+        @media (min-width: 1024px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
 
     .h3-menu {
         font-weight: 300;
@@ -131,7 +146,7 @@ header {
         @include linearGradient-button;
         @include box-shadow;
         color: $quaternary-color;
-        text-decoration: none;  // Correction ici (remplace $no-text-decoration par none ou une autre valeur valide)
+        text-decoration: none;  
         cursor: default;
         transition: all 800ms;
   
