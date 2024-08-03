@@ -10,14 +10,6 @@ h1 {
   font-weight: 700;
 }
 
-h2 {
-  font-family: shrikhand;
-  font-weight: 400;
-  font-size: 25px;
-  padding-top: 30px;
-  margin-bottom: -12px;
-}
-
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,6 +152,9 @@ header .logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 15px;
   gap: 20px;
 }
@@ -273,7 +268,8 @@ header .logo {
   border-radius: 0px 0px 20px 20px;
   height: 70px;
 }
-.restaurants-section .content-card .h3-card {
+.restaurants-section .content-card .h2-card {
+  font-size: 18px;
   margin-bottom: 0px;
 }
 .restaurants-section .content-card .p-card {
@@ -322,6 +318,9 @@ header .logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 20px;
 }
 @media (min-width: 1024px) {
@@ -460,8 +459,15 @@ header {
     margin-top: -50px;
   }
 }
+.menu-section .menu-h1 {
+  font-family: shrikhand;
+  font-weight: 400;
+  font-size: 25px;
+  padding-top: 30px;
+  margin-bottom: -12px;
+}
 @media (min-width: 1440px) {
-  .menu-section .h2-active {
+  .menu-section .menu-h1-active {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -496,7 +502,7 @@ header {
 .menu-section .icon_like-container-menu:hover .icon2 {
   opacity: 0;
 }
-.menu-section .h3-menu {
+.menu-section .h2-menu {
   font-weight: 300;
   font-size: 16px;
   border-bottom: 3px #99E2D0 solid;
